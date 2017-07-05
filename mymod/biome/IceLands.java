@@ -33,7 +33,8 @@ public class IceLands extends BiomeGenBase
         this.spawnableMonsterList.add(new SpawnListEntry(EntityIronGolem.class, 1, 1, 1));
         
         this.setMinMaxHeight(0.1F, 0.5F);
-        this.setTemperatureRainfall(0.5F, 0.2F);
+        //mnmx
+        this.setTemperatureRainfall(0.7F, 0.2F);
    
     }
 } 
