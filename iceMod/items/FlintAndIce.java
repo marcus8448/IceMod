@@ -1,4 +1,4 @@
-package mymod.items;
+package iceMod.items;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -19,7 +19,7 @@ public class FlintAndIce extends Item
         this.setMaxDamage(64);
         this.setCreativeTab(CreativeTabs.tabTools);
     }
-     private String texturePath = "mymod:";
+     private String texturePath = "iceMod:";
     
     public FlintAndIce(int ItemID, String textureName)
     {

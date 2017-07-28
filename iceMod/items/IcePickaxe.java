@@ -1,25 +1,24 @@
-package mymod.items;
+package iceMod.items;
 
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
+import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 
-public class FrozenStick extends Item {
+public class IcePickaxe extends ItemPickaxe {
     
-    private String texturePath = "mymod:";
+    private String texturePath = "iceMod:";
     
-    public FrozenStick(int ItemID, String textureName)
+    public IcePickaxe(int ItemID, EnumToolMaterial material, String textureName)
     {
-        super(ItemID);
+        super(ItemID, material);
         this.setUnlocalizedName(textureName);
-        this.setCreativeTab(CreativeTabs.tabMaterials);
         texturePath += textureName;
     }
 
@@ -31,11 +30,10 @@ public class FrozenStick extends Item {
         this.itemIcon = iconRegister.registerIcon(texturePath);
     }   
 
-/** Makes your Item Enchanted when it is crafted */
-//Ice can be very sharp
+ /** Makes your Item Enchanted when it is crafted */
         public void onCreated(ItemStack item, World world, EntityPlayer player) 
         {
-            item.addEnchantment(Enchantment.sharpness, 7);
+            item.addEnchantment(Enchantment.efficiency, 10);
             // Replace the "." after "Enchantment" to see options
             // The number is the Enchantment Level
         }

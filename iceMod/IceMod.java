@@ -1,18 +1,18 @@
-package mymod;
+package iceMod;
 
-import mymod.biome.IceLands;
-import mymod.blocks.IcyOre;
-import mymod.blocks.IcyOreGen;
-import mymod.items.FlintAndIce;
-import mymod.items.FrozenBeef;
-import mymod.items.FrozenStick;
-import mymod.items.IceFragment;
-import mymod.items.IcePickaxe;
-import mymod.items.IceSword;
-import mymod.projectiles.EntityHunkOIce;
-import mymod.projectiles.HunkOIce;
-import mymod.projectiles.RenderHunkOIce;
-import mymod.proxies.CommonProxy;
+import iceMod.biome.IceLands;
+import iceMod.blocks.IcyOre;
+import iceMod.blocks.IcyOreGen;
+import iceMod.items.FlintAndIce;
+import iceMod.items.FrozenBeef;
+import iceMod.items.FrozenStick;
+import iceMod.items.IceFragment;
+import iceMod.items.IcePickaxe;
+import iceMod.items.IceSword;
+import iceMod.projectiles.EntityHunkOIce;
+import iceMod.projectiles.HunkOIce;
+import iceMod.projectiles.RenderHunkOIce;
+import iceMod.proxies.CommonProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -37,14 +37,14 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 
 
 /* 	MOD INFO */
-	@Mod( modid = "icemod", name = "Ice Mod", version = "0.1")
+	@Mod( modid = "IceMod", name = "Ice Mod", version = "0.1")
 	@NetworkMod(clientSideRequired=true, serverSideRequired=false)	
 
 
-public class Main {
+public class IceMod {
 
 /*	PROXY INFO */
-	@SidedProxy(clientSide = "mymod.proxies.ClientProxy", serverSide = "mymod.proxies.CommonProxy")
+	@SidedProxy(clientSide = "iceMod.proxies.ClientProxy", serverSide = "iceMod.proxies.CommonProxy")
 	public static CommonProxy proxy;
 		
 	
@@ -119,7 +119,7 @@ public class Main {
         LanguageRegistry.addName(IceSword, "Ice Sword");     
         
 //  LOAD FIRE PICKAXE
-        IcePick = new IcePickaxe(1001, Main.IceMaterial, "IcePickaxe").setCreativeTab(CreativeTabs.tabTools);
+        IcePick = new IcePickaxe(1001, IceMod.IceMaterial, "IcePickaxe").setCreativeTab(CreativeTabs.tabTools);
         GameRegistry.registerItem(IcePick, "IcePickaxe");
         LanguageRegistry.addName(IcePick, "Ice Pickaxe");  	
 //  LOAD THE ITEM
@@ -178,7 +178,7 @@ public class Main {
                 " D ",
                 " S ",
             'D', Item.diamond,
-            'S', Main.FrozenStick,
+            'S', IceMod.FrozenStick,
         });
 
  //  PICKAXE RECIPE  
@@ -187,7 +187,7 @@ public class Main {
                 "XXX",
                 " S ",
                 " S ",
-            'S', Main.FrozenStick,
+            'S', IceMod.FrozenStick,
             'X', Item.diamond,
         }); 
         
@@ -227,7 +227,7 @@ public class Main {
                 "III",
                 "SSS",
                 "III",
-            'I', Main.IceFragment,
+            'I', IceMod.IceFragment,
             'S', Item.stick,
         });
         

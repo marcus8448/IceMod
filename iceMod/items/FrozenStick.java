@@ -1,37 +1,41 @@
-package mymod.items;
+package iceMod.items;
 
 import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemFood;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 
-public class FrozenBeef extends ItemFood 
-{
-   
-    private String texturePath = "mymod:";
+public class FrozenStick extends Item {
     
-    public FrozenBeef(int itemID, int healAmount, Float saturationModifier, boolean isWolfsFavoriteMeat, String textureName) 
+    private String texturePath = "iceMod:";
+    
+    public FrozenStick(int ItemID, String textureName)
     {
-        super(itemID, healAmount, saturationModifier, isWolfsFavoriteMeat);
+        super(ItemID);
         this.setUnlocalizedName(textureName);
+        this.setCreativeTab(CreativeTabs.tabMaterials);
         texturePath += textureName;
     }
 
-@Override
+@Override   
 @SideOnly(Side.CLIENT)
+
     public void registerIcons(IconRegister iconRegister)
     {
         this.itemIcon = iconRegister.registerIcon(texturePath);
-    }
-    /** Makes your Item Enchanted when it is crafted */
+    }   
+
+/** Makes your Item Enchanted when it is crafted */
+//Ice can be very sharp
         public void onCreated(ItemStack item, World world, EntityPlayer player) 
         {
-            item.addEnchantment(Enchantment.knockback, 10);
+            item.addEnchantment(Enchantment.sharpness, 7);
             // Replace the "." after "Enchantment" to see options
             // The number is the Enchantment Level
         }

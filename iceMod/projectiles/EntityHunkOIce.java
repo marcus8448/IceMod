@@ -1,4 +1,4 @@
-package mymod.projectiles;
+package iceMod.projectiles;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.monster.EntityBlaze;

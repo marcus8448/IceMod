@@ -1,4 +1,4 @@
-package mymod.projectiles;
+package iceMod.projectiles;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

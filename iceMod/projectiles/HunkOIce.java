@@ -1,4 +1,4 @@
-package mymod.projectiles;
+package iceMod.projectiles;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 
 public class HunkOIce extends Item {
     
-    private String texturePath = "mymod:";
+    private String texturePath = "IceMod:";
     
     public HunkOIce(int ItemID, String textureName)
     {

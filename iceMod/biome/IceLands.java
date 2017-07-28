@@ -1,7 +1,7 @@
- package mymod.biome;
+ package iceMod.biome;
 
 
-import mymod.Main;
+import iceMod.IceMod;
 import net.minecraft.block.Block;
 import net.minecraft.entity.boss.EntityDragon;
 import net.minecraft.entity.monster.EntityIronGolem;
@@ -18,7 +18,7 @@ public class IceLands extends BiomeGenBase
         
         this.setBiomeName("Icelands");
         
-        this.topBlock = (byte)Main.IcyOre.blockID;
+        this.topBlock = (byte)IceMod.IcyOre.blockID;
         this.fillerBlock = (byte)Block.ice.blockID;
         
         this.theBiomeDecorator.bigMushroomsPerChunk = 10;
