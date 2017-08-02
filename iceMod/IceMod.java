@@ -37,7 +37,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 
 
 /* 	MOD INFO */
-	@Mod( modid = "IceMod", name = "Ice Mod", version = "0.1")
+	@Mod( modid = "IceMod", name = "Ice Mod", version = "1.4")
 	@NetworkMod(clientSideRequired=true, serverSideRequired=false)	
 
 
@@ -53,10 +53,6 @@ public class IceMod {
  * *********************************************************** */
 //  DECLARE A NEW CREATIVE TAB  
         public static CreativeTabs IceModTab;
-        
-        //DIM 2 DECLARE
-        public static int MyDimensionID_1 =2;
-
 //FROZEN STICK
     public static Item FrozenStick;
     
@@ -150,11 +146,11 @@ public class IceMod {
         
 //  LOAD THE ITEM
          HunkOIce = new HunkOIce(1007, "HunkOIce").setCreativeTab(CreativeTabs.tabMisc);
-        GameRegistry.registerItem(HunkOIce, "HunkOIce");
-        LanguageRegistry.addName(HunkOIce, "HunkOIce"); 
-        EntityRegistry.registerGlobalEntityID(EntityHunkOIce.class, "HunkOIce", 1);
-         EntityRegistry.registerModEntity(EntityHunkOIce.class, "HunkOIce", 1, this, 256, 1, true);
-         LanguageRegistry.instance().addStringLocalization("entity.modid.HunkOIce.name", "HunkOIce");
+        GameRegistry.registerItem(HunkOIce, "Hunk O' Ice");
+        LanguageRegistry.addName(HunkOIce, "Hunk O' Ice"); 
+        EntityRegistry.registerGlobalEntityID(EntityHunkOIce.class, "Hunk O' Ice", 1);
+         EntityRegistry.registerModEntity(EntityHunkOIce.class, "Hunk O' Ice", 1, this, 256, 1, true);
+         LanguageRegistry.instance().addStringLocalization("entity.modid.Hunk O' Ice.name", "Hunk O' Ice");
          RenderingRegistry.registerEntityRenderingHandler(EntityHunkOIce.class, new RenderHunkOIce(HunkOIce));
    
     
@@ -174,11 +170,12 @@ public class IceMod {
 //  SWORD RECIPE  
         GameRegistry.addRecipe(new ItemStack(IceSword, 1), new Object[]
         {
-                " D ",
-                " D ",
+                "IDI",
+                "IDI",
                 " S ",
             'D', Item.diamond,
             'S', IceMod.FrozenStick,
+			'I', Block.ice,
         });
 
  //  PICKAXE RECIPE  
