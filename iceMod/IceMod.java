@@ -47,40 +47,37 @@ public class IceMod {
 	@SidedProxy(clientSide = "iceMod.proxies.ClientProxy", serverSide = "iceMod.proxies.CommonProxy")
 	public static CommonProxy proxy;
 		
-	
-/**	
- * DECLARATION SECTION 
- * *********************************************************** */
-//  DECLARE A NEW CREATIVE TAB  
+
+//  Declare the IceMod Creative Tab
         public static CreativeTabs IceModTab;
-//FROZEN STICK
+//  Declare the Frozen Stick
     public static Item FrozenStick;
     
-//  DECLARE NEW TOOL MATERIAL
+//  Declare the IceMaterial
         public static EnumToolMaterial IceMaterial = EnumHelper.addToolMaterial("IceMaterial", 4, 1700, 9.0F, 4.0F, 11);
         
-//  DECLARE THE SWORD 
+//  Declare the IceSword
         public static Item IceSword;
         
-//  DECLARE THE PICKAXE 
+//  Declare the IcePickaxe
         public static Item IcePick;
         
-//  DECLARE THE ITEM
+//  Declare the IceFragment
         public static Item IceFragment;
         
-//  DECLARE THE BLOCK
+//  Declare the IcyOre
         public static Block IcyOre;
         
-//  DECLARE THE FOOD
+//  Declare the FrozenBeef
         public static Item FrozenBeef;
 
-//  DECLARE THE BIOME
+//  Declare the FREEZING biome
         public static  BiomeGenBase IceLands;  
           
-//  DECLARE THE FLINT AND DIAMOND
+//  Declare the Flint and Diamond
         public static Item FlintAndDiamond;
 
-// DECLARE BALL OF MAGMA
+//  Declare the Hunk O' Ice
         public static Item HunkOIce;
         
 
@@ -93,58 +90,57 @@ public class IceMod {
 @EventHandler	
 	public  void preInit( FMLPreInitializationEvent event ) 
 	{
-/**	
- * LOAD SECTION 
- * *********************************************************** */ 
 
-//  LOAD THE CREATIVE TAB
+	// Load the items/blocks etc
+
+//  Load the IceMod Creative Tab
         IceModTab = new CreativeTabs("IceMod") {
             public ItemStack getIconItemStack() {
                 return new ItemStack(FrozenBeef, 1, 0);   // Icon, Stack Size, Tab Position
             }
         };
         
-        //FROZEN STICK
+//  Load the FrozenStick
          FrozenStick = new FrozenStick(999, "FrozenStick").setCreativeTab(CreativeTabs.tabMisc);
         GameRegistry.registerItem(FrozenStick, "FrozenStick");
         LanguageRegistry.addName(FrozenStick, "Frozen Stick");     
         
-//  LOAD FIRESWORD
+//  Load the IceSword
         IceSword = new IceSword(1000, EnumToolMaterial.EMERALD, "IceSword").setCreativeTab(CreativeTabs.tabCombat);
         GameRegistry.registerItem(IceSword, "IceSword");
         LanguageRegistry.addName(IceSword, "Ice Sword");     
         
-//  LOAD FIRE PICKAXE
+//  Load the IcePickaxe
         IcePick = new IcePickaxe(1001, IceMod.IceMaterial, "IcePickaxe").setCreativeTab(CreativeTabs.tabTools);
         GameRegistry.registerItem(IcePick, "IcePickaxe");
         LanguageRegistry.addName(IcePick, "Ice Pickaxe");  	
-//  LOAD THE ITEM
+//  Load the IceFragment
         IceFragment = new IceFragment(1002, "IceFragment").setCreativeTab(CreativeTabs.tabMisc);
         GameRegistry.registerItem(IceFragment, "IceFragment");
         LanguageRegistry.addName(IceFragment, "Ice Fragment");        
         
-//  LOAD THE BLOCK 
+//  Load the IcyOre
         IcyOre = new IcyOre(1003, Material.rock, "IcyiOre").setCreativeTab(CreativeTabs.tabMaterials);
         GameRegistry.registerBlock(IcyOre, "IcyOre");
         LanguageRegistry.addName(IcyOre, "Icy Ore"); 
 		MinecraftForge.setBlockHarvestLevel(IcyOre, "pickaxe", 3);
 
 		
- //  LOAD THE FOOD
+ //  Load the FrozenBeef
         FrozenBeef = new FrozenBeef(1004, 3, 3.0F, true, "FrozenBeef").setCreativeTab(CreativeTabs.tabFood);
         GameRegistry.registerItem(FrozenBeef, "FrozenBeef");
         LanguageRegistry.addName(FrozenBeef, "Frozen Beef"); 
         
-//  LOAD BIOME
+//  Load the Icelands
         IceLands = new IceLands(77);
         GameRegistry.addBiome(IceLands);        
 
- //  LOAD FLINT AND DIAMOND
+ //  Load the Flint and diamond
         FlintAndDiamond = new FlintAndIce(1006, "FlintAndDiamond").setCreativeTab(CreativeTabs.tabTools);
         GameRegistry.registerItem(FlintAndDiamond, "FlintAndDiamond");
         LanguageRegistry.addName(FlintAndDiamond, "Flint And Diamond");
         
-//  LOAD THE ITEM
+//  Load the Hunk O' Ice
          HunkOIce = new HunkOIce(1007, "HunkOIce").setCreativeTab(CreativeTabs.tabMisc);
         GameRegistry.registerItem(HunkOIce, "Hunk O' Ice");
         LanguageRegistry.addName(HunkOIce, "Hunk O' Ice"); 
