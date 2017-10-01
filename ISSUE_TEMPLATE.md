@@ -15,7 +15,18 @@
  Minecraft Version: 
  Forge Version: 
  
+ Singleplayer (SSP) or Multiplayer (SMP)? 
+ 
+ 
+ Modlist:
+ 
+ 
+ 
+ 
  Issue Details:
+ 
+ 
+ 
  
  
  Screenshots / Log / Crash Report LINK:
