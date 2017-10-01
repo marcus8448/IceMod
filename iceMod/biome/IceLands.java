@@ -25,7 +25,6 @@ public class IceLands extends BiomeGenBase
         this.theBiomeDecorator.treesPerChunk = 5;
         this.theBiomeDecorator.clayPerChunk  = 3;
         this.theBiomeDecorator.reedsPerChunk = 1;
-        this.theBiomeDecorator.deadBushPerChunk = 7;
 
         this.spawnableMonsterList.add(new SpawnListEntry(EntitySnowman.class, 25, 4, 8));
         this.spawnableCreatureList.add(new SpawnListEntry(EntityCow.class, 25, 4, 8));
