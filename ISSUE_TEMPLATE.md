@@ -18,6 +18,6 @@
  Issue Details:
  
  
- Screenshots / Log / Crash Report:
+ Screenshots / Log / Crash Report LINK:
  
  
