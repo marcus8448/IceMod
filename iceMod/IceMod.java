@@ -163,7 +163,7 @@ public class IceMod {
  * RECIPES SECTION 
  * *********************************************************** */
 
-//  SWORD RECIPE  
+// The Recipe for the Ice Sword
         GameRegistry.addRecipe(new ItemStack(IceSword, 1), new Object[]
         {
                 "IDI",
@@ -174,7 +174,7 @@ public class IceMod {
 			'I', Block.ice,
         });
 
- //  PICKAXE RECIPE  
+ // The Recipe for the Ice Pickaxe
         GameRegistry.addRecipe(new ItemStack(IcePick, 1), new Object[]
         {
                 "XXX",
@@ -184,10 +184,10 @@ public class IceMod {
             'X', Item.diamond,
         }); 
         
- //  SMELTING RECIPE
+ // The Smelting Recipe for ICYORE
         GameRegistry.addSmelting(IcyOre.blockID, (new ItemStack(IcyOre, 9)), 10);
 
-//  FOOD RECIPE         
+// The Recipe for Frozen Beef         
         GameRegistry.addRecipe(new ItemStack(FrozenBeef, 1), new Object[]
         {
                 "CCC",
@@ -197,7 +197,7 @@ public class IceMod {
             'B', Item.beefCooked,
         });
 
-//  ITEM RECIPE         
+// The Recipe for the Flint And Diamons      
         GameRegistry.addRecipe(new ItemStack(FlintAndDiamond, 1), new Object[]
         {
                 "   ",
@@ -206,7 +206,7 @@ public class IceMod {
             'I', Block.ice,
             'F', Item.flint,
         });
-        //  ITEM RECIPE         
+        // The Recipe for the Ice Fragment   
         GameRegistry.addRecipe(new ItemStack(IceFragment, 9), new Object[]
         {
                 "   ",
@@ -214,7 +214,7 @@ public class IceMod {
                 "   ",
             'I', Block.ice,
         });
-        //  ITEM RECIPE         
+        // The Recipe for the Frozen Sticks    
         GameRegistry.addRecipe(new ItemStack(FrozenStick, 3), new Object[]
         {
                 "III",
@@ -233,10 +233,10 @@ public class IceMod {
  * EXTRA METHODS SECTION 
  * *********************************************************** */
 
-//  REGISTER THE ORE GENERATION 
+// Register Icy Ore Gen
     GameRegistry.registerWorldGenerator(new IcyOreGen());
     
-//  CHANGE TAB NAME
+// Change The Ice Mod Tab's Name
         LanguageRegistry.instance().addStringLocalization("itemGroup.IceModTab", "en_US", "Ice Mod");  
         
 
