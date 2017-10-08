@@ -8,7 +8,6 @@ import net.minecraft.entity.projectile.*;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 import net.minecraft.entity.item.EntityTNTPrimed;
-import net.minecraft.entity.projectile.*;
 
 public class EntityHunkOIce extends EntityThrowable
 {
