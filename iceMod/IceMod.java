@@ -1,6 +1,5 @@
 package iceMod;
 
-import api.Structure;
 import iceMod.biome.IceLands;
 import iceMod.blocks.IcyOre;
 import iceMod.blocks.IcyOreGen;
