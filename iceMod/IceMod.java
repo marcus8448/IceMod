@@ -103,33 +103,33 @@ public class IceMod {
 //  Load the FrozenStick
          FrozenStick = new FrozenStick(999, "FrozenStick").setCreativeTab(CreativeTabs.tabMisc);
         GameRegistry.registerItem(FrozenStick, "FrozenStick");
-        LanguageRegistry.addName(FrozenStick, "Frozen Stick");     
+        LanguageRegistry.addName(FrozenStick, "§9Frozen Stick");     
         
 //  Load the IceSword
         IceSword = new IceSword(1000, EnumToolMaterial.EMERALD, "IceSword").setCreativeTab(CreativeTabs.tabCombat);
         GameRegistry.registerItem(IceSword, "IceSword");
-        LanguageRegistry.addName(IceSword, "Ice Sword");     
+        LanguageRegistry.addName(IceSword, "§9Ice Sword");     
         
 //  Load the IcePickaxe
         IcePick = new IcePickaxe(1001, IceMod.IceMaterial, "IcePickaxe").setCreativeTab(CreativeTabs.tabTools);
         GameRegistry.registerItem(IcePick, "IcePickaxe");
-        LanguageRegistry.addName(IcePick, "Ice Pickaxe");  	
+        LanguageRegistry.addName(IcePick, "§9Ice Pickaxe");  	
 //  Load the IceFragment
         IceFragment = new IceFragment(1002, "IceFragment").setCreativeTab(CreativeTabs.tabMisc);
         GameRegistry.registerItem(IceFragment, "IceFragment");
-        LanguageRegistry.addName(IceFragment, "Ice Fragment");        
+        LanguageRegistry.addName(IceFragment, "§9Ice Fragment");        
         
 //  Load the IcyOre
         IcyOre = new IcyOre(1003, Material.rock, "IcyiOre").setCreativeTab(CreativeTabs.tabMaterials);
         GameRegistry.registerBlock(IcyOre, "IcyOre");
-        LanguageRegistry.addName(IcyOre, "Icy Ore"); 
+        LanguageRegistry.addName(IcyOre, "§9Icy Ore"); 
 		MinecraftForge.setBlockHarvestLevel(IcyOre, "pickaxe", 3);
 
 		
  //  Load the FrozenBeef
         FrozenBeef = new FrozenBeef(1004, 3, 3.0F, true, "FrozenBeef").setCreativeTab(CreativeTabs.tabFood);
         GameRegistry.registerItem(FrozenBeef, "FrozenBeef");
-        LanguageRegistry.addName(FrozenBeef, "Frozen Beef"); 
+        LanguageRegistry.addName(FrozenBeef, "§9Frozen Beef"); 
         
 //  Load the Icelands
         IceLands = new IceLands(54);
@@ -138,7 +138,7 @@ public class IceMod {
  //  Load the Flint and diamond
         FlintAndDiamond = new FlintAndIce(1006, "FlintAndDiamond").setCreativeTab(CreativeTabs.tabTools);
         GameRegistry.registerItem(FlintAndDiamond, "FlintAndDiamond");
-        LanguageRegistry.addName(FlintAndDiamond, "Flint & Diamond");
+        LanguageRegistry.addName(FlintAndDiamond, "§9Flint & Diamond");
         
 //  Load the Hunk O' Ice
          HunkOIce = new HunkOIce(1007, "HunkOIce").setCreativeTab(CreativeTabs.tabMisc);
@@ -230,19 +230,13 @@ public class IceMod {
 
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
-	
-/**	
- * EXTRA METHODS SECTION 
- * *********************************************************** */
 
-// Register Icy Ore Gen
+// Register Icy Ore Generation
     GameRegistry.registerWorldGenerator(new IcyOreGen());
     
-// Change The Ice Mod Tab's Name
-        LanguageRegistry.instance().addStringLocalization("itemGroup.IceModTab", "en_US", "Ice Mod");  
+// Change The IceMod Tab's Name
+        LanguageRegistry.instance().addStringLocalization("itemGroup.IceModTab", "en_US", "§9Ice Mod");  
         
-
-
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */	
 
 	
