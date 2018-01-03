@@ -37,8 +37,8 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 
 
 /* 	MOD INFO */
-	@Mod( modid = "IceMod", name = "Ice Mod", version = "1.4")
-	@NetworkMod(clientSideRequired=true, serverSideRequired=false)	
+	@Mod( modid = "IceMod", name = "Ice Mod", version = "1.5")
+	@NetworkMod(clientSideRequired=true, serverSideRequired=true)	
 
 
 public class IceMod {
@@ -71,7 +71,7 @@ public class IceMod {
 //  Declare the FrozenBeef
         public static Item FrozenBeef;
 
-//  Declare the FREEZING biome
+//  Declare the Icy cold biome
         public static  BiomeGenBase IceLands;  
           
 //  Declare the Flint and Diamond
@@ -132,13 +132,13 @@ public class IceMod {
         LanguageRegistry.addName(FrozenBeef, "Frozen Beef"); 
         
 //  Load the Icelands
-        IceLands = new IceLands(77);
+        IceLands = new IceLands(54);
         GameRegistry.addBiome(IceLands);        
 
  //  Load the Flint and diamond
         FlintAndDiamond = new FlintAndIce(1006, "FlintAndDiamond").setCreativeTab(CreativeTabs.tabTools);
         GameRegistry.registerItem(FlintAndDiamond, "FlintAndDiamond");
-        LanguageRegistry.addName(FlintAndDiamond, "Flint And Diamond");
+        LanguageRegistry.addName(FlintAndDiamond, "Flint & Diamond");
         
 //  Load the Hunk O' Ice
          HunkOIce = new HunkOIce(1007, "HunkOIce").setCreativeTab(CreativeTabs.tabMisc);
@@ -177,11 +177,12 @@ public class IceMod {
  // The Recipe for the Ice Pickaxe
         GameRegistry.addRecipe(new ItemStack(IcePick, 1), new Object[]
         {
-                "XXX",
+                "IXI",
                 " S ",
                 " S ",
             'S', IceMod.FrozenStick,
             'X', Item.diamond,
+			'I', Block.Ice,
         }); 
         
  // The Smelting Recipe for ICYORE
@@ -190,14 +191,15 @@ public class IceMod {
 // The Recipe for Frozen Beef         
         GameRegistry.addRecipe(new ItemStack(FrozenBeef, 1), new Object[]
         {
-                "CCC",
-                "CBC",
-                "CCC",
+                "CSC",
+                "SBS",
+                "CSC",
             'C', Block.ice,
             'B', Item.beefCooked,
+			's', IceMod.IceFragment,
         });
 
-// The Recipe for the Flint And Diamons      
+// The Recipe for the Flint And Diamond      
         GameRegistry.addRecipe(new ItemStack(FlintAndDiamond, 1), new Object[]
         {
                 "   ",
