@@ -1,5 +1,6 @@
 package iceMod;
 
+import api.Structure;
 import iceMod.biome.IceLands;
 import iceMod.blocks.IcyOre;
 import iceMod.blocks.IcyOreGen;
@@ -22,7 +23,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
-import api.Structure;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
