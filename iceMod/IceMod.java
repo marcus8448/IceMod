@@ -140,11 +140,11 @@ public class IceMod {
         
 //  Load the Hunk O' Ice
          HunkOIce = new HunkOIce(1007, "HunkOIce").setCreativeTab(CreativeTabs.tabMisc);
-        GameRegistry.registerItem(HunkOIce, "Hunk O' Ice");
-        LanguageRegistry.addName(HunkOIce, "Hunk O' Ice"); 
-        EntityRegistry.registerGlobalEntityID(EntityHunkOIce.class, "Hunk O' Ice", 1);
-         EntityRegistry.registerModEntity(EntityHunkOIce.class, "Hunk O' Ice", 1, this, 256, 1, true);
-         LanguageRegistry.instance().addStringLocalization("entity.modid.Hunk O' Ice.name", "Hunk O' Ice");
+        GameRegistry.registerItem(HunkOIce, "Hunk O Ice");
+        LanguageRegistry.addName(HunkOIce, "Hunk O Ice"); 
+        EntityRegistry.registerGlobalEntityID(EntityHunkOIce.class, "Hunk O Ice", 1);
+         EntityRegistry.registerModEntity(EntityHunkOIce.class, "Hunk O Ice", 1, this, 256, 1, true);
+         LanguageRegistry.instance().addStringLocalization("entity.modid.Hunk O Ice.name", "Hunk O Ice");
          RenderingRegistry.registerEntityRenderingHandler(EntityHunkOIce.class, new RenderHunkOIce(HunkOIce));
    
     
