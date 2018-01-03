@@ -86,7 +86,7 @@ public class IceMod {
 
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */	
 
-	// Loading everything!
+// Loading everything!
 @EventHandler	
 	public  void preInit( FMLPreInitializationEvent event ) 
 	{
@@ -219,10 +219,10 @@ public class IceMod {
             'I', Block.ice,
         });
         // The Recipe for the Frozen Sticks    
-        GameRegistry.addRecipe(new ItemStack(FrozenStick, 3), new Object[]
+        GameRegistry.addRecipe(new ItemStack(FrozenStick, 1), new Object[]
         {
                 "III",
-                "SSS",
+                "ISI",
                 "III",
             'I', IceMod.IceFragment,
             'S', Item.stick,
