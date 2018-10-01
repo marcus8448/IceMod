@@ -9,24 +9,24 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class IcyOre extends Block {
 
-    private String texturePath = "mymod:";  
-    private int thisBlockID;
+    private String texturePath = "icemod";  
+    private int blockID;
     
-    public IcyOre (int par1, Material blockMaterial, String textureName) {
+    public IcyOre (int id, Material blockMaterial, String textureName) {
         
         super(par1, blockMaterial);
         this.setCreativeTab(CreativeTabs.tabBlock);
         this.setUnlocalizedName(textureName);
         texturePath += textureName;
-        thisBlockID = par1;
+        blockID = id;
     }
 
-    public int idDropped(int par1, Random par2Random, int par3)
+    public int idDropped(int int1, Random rand, int int2)
     {
-        return thisBlockID;
+        return blockID;
     }
     
-    public int quantityDropped(Random random)
+    public int quantityDropped(Random rand)
     {
         return 1;
     }
