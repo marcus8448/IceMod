@@ -20,7 +20,7 @@ public class HunkOIce extends Item {
     {
         super(ItemID);
         this.setUnlocalizedName(textureName);
-        this.setCreativeTab(CreativeTabs.tabMaterials);
+        this.setCreativeTab(CreativeTabs.tabMisc);
         texturePath += textureName;
     }
 
