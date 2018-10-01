@@ -20,7 +20,7 @@ import org.lwjgl.opengl.GL12;
 public class RenderHunkOIce extends Render
 {
     private Item field_94151_a;
-    private int field_94150_f;
+    private int field_94150_f; //why?
 
     public RenderHunkOIce(Item par1Item, int par2)
     {
