@@ -35,7 +35,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 
-	@Mod( modid = "IceMod", name = "Ice Mod", version = "1.5")
+	@Mod( modid = "IceMod", name = "Ice Mod", version = "1.6")
 	@NetworkMod(clientSideRequired=true, serverSideRequired=true)	
 
 
