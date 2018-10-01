@@ -21,7 +21,7 @@ public class IceLands extends BiomeGenBase
         this.topBlock = (byte)IceMod.IcyOre.blockID;
         this.fillerBlock = (byte)Block.ice.blockID;
         
-        this.theBiomeDecorator.bigMushroomsPerChunk = 10;
+        this.theBiomeDecorator.bigMushroomsPerChunk = 5;
         this.theBiomeDecorator.treesPerChunk = 5;
         this.theBiomeDecorator.clayPerChunk  = 3;
         this.theBiomeDecorator.reedsPerChunk = 1;
