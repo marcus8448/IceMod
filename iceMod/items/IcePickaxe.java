@@ -30,11 +30,9 @@ public class IcePickaxe extends ItemPickaxe {
         this.itemIcon = iconRegister.registerIcon(texturePath);
     }   
 
- /** Makes your Item Enchanted when it is crafted */
         public void onCreated(ItemStack item, World world, EntityPlayer player) 
         {
             item.addEnchantment(Enchantment.efficiency, 10);
-            // Replace the "." after "Enchantment" to see options
-            // The number is the Enchantment Level
+
         }
 }
