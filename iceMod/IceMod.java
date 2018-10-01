@@ -47,7 +47,7 @@ public class IceMod {
 
         public static CreativeTabs IceModTab;
 	
-        public static EnumToolMaterial IceMaterial = EnumHelper.addToolMaterial("IceMaterial", 4, 1700, 9.0F, 4.0F, 11);
+        public static EnumToolMaterial IceMaterial = EnumHelper.addToolMaterial("IceMaterial", 4, 300, 9.0F, 4.0F, 11);
 	
         public static BiomeGenBase IceLands; 
 	
