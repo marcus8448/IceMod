@@ -31,12 +31,9 @@ public class FrozenStick extends Item {
         this.itemIcon = iconRegister.registerIcon(texturePath);
     }   
 
-/** Makes your Item Enchanted when it is crafted */
-//Ice can be very sharp
+        //Ice can be very sharp
         public void onCreated(ItemStack item, World world, EntityPlayer player) 
         {
             item.addEnchantment(Enchantment.sharpness, 7);
-            // Replace the "." after "Enchantment" to see options
-            // The number is the Enchantment Level
         }
 }
