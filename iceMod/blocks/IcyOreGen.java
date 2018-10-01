@@ -19,8 +19,6 @@ public class IcyOreGen implements IWorldGenerator {
         }              
     }
 
-
-
     private void generateSurface(World world, Random random, int BlockX, int BlockZ) {
         for(int i =0; i<10; i++){ 
             int Xcoord = BlockX + random.nextInt(16);
@@ -29,8 +27,6 @@ public class IcyOreGen implements IWorldGenerator {
             (new WorldGenMinable(Main.IcyOre.blockID, 16)).generate(world, random, Xcoord, Ycoord, Zcoord);
         }
     }
-    
-
 }   
     
 
